@@ -1,5 +1,5 @@
 # 4-7-8 Breathing, app for Fitbit smartwatches
-## Sense and Versa devices are compatible
+## Sense and Versa 3+ devices are compatible
 
 
 ![4-7-8 app icon](https://raw.githubusercontent.com/bazzarelli/4-7-8-breath/main/resources/icon.png)
