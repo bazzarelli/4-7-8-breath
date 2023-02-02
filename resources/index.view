@@ -1,0 +1,91 @@
+<svg viewport-fill="black">
+  
+  <svg>
+    <gradientRect width="100%" height="100%"
+      gradient-type="linear"
+      gradient-x1="0" gradient-y1="200"
+      gradient-x2="0" gradient-y2="100%"
+      gradient-color1="black" gradient-color2="#560d19" />
+  </svg>    
+  
+  <svg width="100%" height="100%">
+
+    <circle id="circle1" class="cirlce" cx="18%" cy="6%" r="7">
+      <animate attributeName="fill" begin="enable" from="#000000" to="#cf6491" dur="0.35" />
+      <animate attributeName="fill" begin="disable" from="#cf6491" to="#000000" dur="0" />
+    </circle>
+    
+    <circle id="circle2" class="cirlce" cx="29%" cy="6%" r="7">
+      <animate attributeName="fill" begin="enable" from="#000000" to="#cf6491" dur="0.35" />
+      <animate attributeName="fill" begin="disable" from="#cf6491" to="#000000" dur="0" />
+    </circle>
+    
+    <circle id="circle3" class="cirlce" cx="40%" cy="6%" r="7">
+      <animate attributeName="fill" begin="enable" from="#000000" to="#cf6491" dur="0.35" />
+      <animate attributeName="fill" begin="disable" from="#cf6491" to="#000000" dur="0" />
+    </circle>
+    
+    <circle id="circle4" class="cirlce" cx="51%" cy="6%" r="7">
+      <animate attributeName="fill" begin="enable" from="#000000" to="#cf6491" dur="0.35" />
+      <animate attributeName="fill" begin="disable" from="#cf6491" to="#000000" dur="0" />
+    </circle>
+    
+    <circle id="circle5" class="cirlce" cx="62%" cy="6%" r="7">
+      <animate attributeName="fill" begin="enable" from="#000000" to="#cf6491" dur="0.35" />
+      <animate attributeName="fill" begin="disable" from="#cf6491" to="#000000" dur="0" />
+    </circle>
+    
+    <circle id="circle6" class="cirlce" cx="73%" cy="6%" r="7">
+      <animate attributeName="fill" begin="enable" from="#000000" to="#cf6491" dur="0.35" />
+      <animate attributeName="fill" begin="disable" from="#cf6491" to="#000000" dur="0" />
+    </circle>
+    
+    <circle id="circle7" class="cirlce" cx="83%" cy="6%" r="7">
+      <animate attributeName="fill" begin="enable" from="#000000" to="#cf6491" dur="0.35" />
+      <animate attributeName="fill" begin="disable" from="#cf6491" to="#000000" dur="0" />
+    </circle>
+    
+  </svg>
+        
+  <svg width="100%" height="100%">
+    <image x="25" y="34" width="285" height="275" href="images/triangle-bg.png" />
+  </svg>
+  
+  <!--  shade comes up during inhale  -->
+  <svg width="100%" height="100%">
+    <use id="shadeUpInstance" href="#shadeUp" width="100%" height="100%" />
+  </svg>
+
+  <!--  shade comes down during exhale  -->  
+   <svg width="100%" height="100%">
+    <use id="shadeDownInstance" href="#shadeDown" width="100%" height="100%" />
+  </svg>
+
+  <svg width="100%" height="100%">
+    <g id="exhaleLines" transform="translate(0,-100%)">
+      <animateTransform attributeType="translate" from="0,-90%" to="0,0" begin="enable" dur="8" />
+      <animate attributeName="opacity" begin="enable" from="0" to="1" dur="2" />
+      <line x1="18%" y1="12%" x2="18%" y2="100%-220" fill="#9b172d" stroke-width="10" stroke-linecap="round" />
+      <line x1="29%" y1="12%" x2="29%" y2="100%-160" fill="#9b172d" stroke-width="10" stroke-linecap="round" />
+      <line x1="40%" y1="12%" x2="40%" y2="100%-80" fill="#9b172d" stroke-width="10" stroke-linecap="round" />
+      <line x1="51%" y1="12%" x2="51%" y2="100%-30" fill="#9b172d" stroke-width="10" stroke-linecap="round" />
+      <line x1="62%" y1="12%" x2="62%" y2="100%-80" fill="#9b172d" stroke-width="10" stroke-linecap="round" />
+      <line x1="73%" y1="12%" x2="73%" y2="100%-160" fill="#9b172d" stroke-width="10" stroke-linecap="round" />
+      <line x1="83%" y1="12%" x2="83%" y2="100%-220" fill="#9b172d" stroke-width="10" stroke-linecap="round" />
+      <animateTransform attributeType="translate" from="0,0" to="0,-90%" begin="enable+8" dur="0" />
+      <animate attributeName="opacity" begin="enable+7" from="1" to="0" dur="1" />
+    </g>
+  </svg>
+  
+  <!--  inner triangle makes counter numbers more visible when lines pass under them  -->
+  <svg width="100%" height="100%">
+    <image x="107" y="84" width="119" height="115" href="images/inner-triangle-bg.png" opacity="0.75" />
+  </svg>
+  
+  <use id="startStopButton" href="#text-button" class="text-button bottom button-fill" />
+      
+  <text id="counterText" />
+  <text id="startText">start</text>
+  <use id="breathPhaseTextInstance" href="#breathPhaseText" />
+  
+</svg>

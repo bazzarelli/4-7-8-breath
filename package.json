@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0"
+  },
+  "fitbit": {
+    "appUUID": "46f27c44-5271-48b0-8b6a-74b63334e83e",
+    "appType": "app",
+    "appDisplayName": "4-7-8 Breath",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#e91e63",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "4-7-8 Breath"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

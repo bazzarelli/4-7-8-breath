@@ -1,0 +1,37 @@
+.button-fill                { fill: none; }
+
+.background {
+  viewport-fill: fb-cerulean;
+}
+
+#counterText {
+  font-size: 70;
+  font-family: System-Bold;
+  text-length: 24;
+  text-anchor: middle;
+  x: 50%;
+  y: 45%;
+  fill: #8766ac;
+}
+
+#startText {
+  font-size: 32;
+  font-family: System-Bold;
+  text-length: 24;  
+  text-anchor: middle;
+  x: 20%;
+  y: 88%;
+  fill: #f6a5c7;
+}
+
+#actionText {
+  font-size: 30;
+  font-family: System-Bold;
+  text-length: 24;  
+  text-anchor: middle;
+  x: 75%;
+  y: 88%;
+  fill: #8766ac;  
+  opacity: 0;
+}
+
